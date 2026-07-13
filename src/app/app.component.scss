@@ -309,6 +309,21 @@ img:hover {
   font-size: .85rem;
 }
 
+.stats-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.stats-highlights span {
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .75);
+  font-size: .95rem;
+}
+
 .profile-box {
   max-width: 860px;
   margin-top: 34px;
@@ -492,7 +507,7 @@ img:hover {
     padding: 32px 24px;
   }
 
-  .contact-card > *,
+  .contact-card>*,
   .btn--primary-talk {
     min-width: 0;
     max-width: 100%;
