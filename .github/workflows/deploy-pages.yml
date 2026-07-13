@@ -33,7 +33,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular
-        run: npm run build -- --configuration production --base-href=/eloucentrismo/
+        run: npm run build -- --configuration production --base-href=/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
