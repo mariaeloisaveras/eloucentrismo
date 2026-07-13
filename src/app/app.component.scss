@@ -452,7 +452,7 @@ img:hover {
   .cards--two,
   .stats-grid,
   .contact-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .side-photo {
@@ -485,6 +485,21 @@ img:hover {
   .actions,
   .btn {
     width: 100%;
+  }
+
+  .contact-card {
+    width: 100%;
+    padding: 32px 24px;
+  }
+
+  .contact-card > *,
+  .btn--primary-talk {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .contact-card a.contact-link {
+    overflow-wrap: anywhere;
   }
 
   .gallery {
