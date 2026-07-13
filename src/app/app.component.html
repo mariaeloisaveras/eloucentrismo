@@ -1,0 +1,196 @@
+<header class="topbar">
+  <a class="brand" href="#hero" aria-label="Início">
+    <span>Mídia Kit - &#64;eloucentrismo</span>
+  </a>
+
+  <nav aria-label="Navegação principal">
+    <a href="#sobre">Sobre</a>
+    <a href="#alcance">Alcance</a>
+    <a href="#comunidade">Comunidade</a>
+    <a href="#parcerias">Parcerias</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section id="hero" class="hero section">
+    <div class="hero__content">
+      <p class="eyebrow">viagens reais • natureza • montanhas • aventura</p>
+      <h1>Registrando caminhos</h1>
+      <p class="subtitle">Memórias de quem vive a natureza intensamente.</p>
+      <p class="copy">
+        {{ instagram }} compartilha viagens independentes, trilhas, montanhas e experiências autênticas
+        ao ar livre, inspirando uma comunidade de pessoas apaixonadas por explorar o mundo
+        além do óbvio.
+      </p>
+      <div class="actions">
+        <a class="btn btn--primary" href="https://instagram.com/eloucentrismo" target="_blank">
+          Veja minhas aventuras
+        </a>
+        <a class="btn btn--secondary" href="#sobre">
+          Conheça a história
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section about">
+    <div>
+      <p class="eyebrow">sobre</p>
+      <h2>&#64;eloucentrismo</h2>
+      <p class="signature">criadora: Maria Eloisa Véras</p>
+
+      <p class="lead">
+        &#64;eloucentrismo é o espaço onde Elo registra viagens, trilhas, montanhas
+        e experiências reais em meio à natureza. Cada post, reel e story documenta caminhos,
+        descobertas e aventuras pelo Brasil e América do Sul, conectando uma comunidade que
+        valoriza liberdade, exploração e destinos além do óbvio.
+      </p>
+
+      <div class="cards cards--three">
+        <article class="card" *ngFor="let item of pillars">
+          <lucide-icon [name]="item.icon" [size]="34"></lucide-icon>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </article>
+      </div>
+    </div>
+
+    <img class="side-photo" [src]="aboutImage" alt="Pessoa na montanha sorrindo com por do sol ao fundo">
+  </section>
+
+  <section id="alcance" class="section stats-section">
+    <p class="eyebrow">alcance</p>
+
+    <h2>Resultados da comunidade</h2>
+
+    <p class="section-subtitle">
+      Uma comunidade construída com viagens reais, natureza e histórias autênticas.
+    </p>
+
+    <div class="stats-grid">
+      <article class="stat-card" *ngFor="let stat of stats">
+        <lucide-icon [name]="stat.icon" [size]="36"></lucide-icon>
+        <strong>{{ stat.value }}</strong>
+        <span>{{ stat.label }}</span>
+      </article>
+    </div>
+
+    <div class="stats-note">
+      <p>
+        * Engajamento calculado com base nos últimos 60 conteúdos publicados.
+      </p>
+
+      <small>
+        Dados atualizados em julho de 2026.
+      </small>
+    </div>
+  </section>
+
+  <section id="comunidade" class="section audience">
+    <img class="side-photo side-photo--community" [src]="communityImage"
+      alt="Pessoa fazendo trilha com montanha de fundo">
+    <div>
+      <p class="eyebrow">comunidade</p>
+      <h2 class="community-title">
+        Uma comunidade apaixonada por explorar
+      </h2>
+
+      <p class="lead">
+        A audiência de {{ instagram }} é formada por pessoas apaixonadas por viagens,
+        paisagens marcantes, trilhas, montanhas e experiências autênticas em meio à natureza.
+        Uma comunidade que valoriza destinos além do convencional e histórias vividas de verdade.
+      </p>
+
+      <div class="profile-box">
+        <h3>Quem acompanha o perfil</h3>
+
+        <ul>
+          <li>Pessoas apaixonadas por viagens independentes e natureza</li>
+          <li>Trilheiros, montanhistas e praticantes de atividades outdoor</li>
+          <li>Viajantes que buscam experiências autênticas em vez de roteiros tradicionais</li>
+          <li>Pessoas interessadas em fotografia de paisagem, fauna e aventura</li>
+          <li>Público de 20–40 anos com afinidade por turismo de experiência e equipamentos outdoor</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="parcerias" class="section partnership">
+    <div>
+      <p class="eyebrow">parcerias</p>
+
+      <h2>Vamos criar algo juntos?</h2>
+
+      <div class="partner-proof">
+        <p class="trusted-by">
+          marcas que já confiaram no meu trabalho
+        </p>
+
+        <div class="brand-tags">
+          <span class="brand-active">Nos Alpes • parceria ativa</span>
+          <span class="brand-past">Worldpackers • colaboração anterior</span>
+        </div>
+
+        <p class="partnership-note">
+          Conteúdo autoral desenvolvido em viagens, trilhas e expedições, com integração autêntica de marcas ao contexto
+          da experiência.
+        </p>
+      </div>
+
+      <div class="cards cards--two">
+        <article class="card" *ngFor="let item of partnerships">
+          <lucide-icon [name]="item.icon" [size]="34"></lucide-icon>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="gallery" aria-label="Galeria de fotos de viagens, trilhas e natureza">
+      <img *ngFor="let photo of gallery" [src]="photo" alt="Foto de viagem, trilha ou paisagem natural">
+    </div>
+  </section>
+
+  <section id="contato" class="section contact">
+    <p class="eyebrow">contato</p>
+
+    <h2>Vamos criar algo juntos?</h2>
+
+    <p class="section-subtitle align-left">
+      Tem uma campanha, lançamento ou projeto em mente?
+      <br>
+      Vamos conversar.
+    </p>
+
+    <div class="contact-card">
+      <div>
+        <lucide-icon name="instagram" [size]="28"></lucide-icon>
+        <strong>Instagram</strong>
+        <a class="contact-link" href="https://instagram.com/eloucentrismo" target="_blank">
+          {{ instagram }}
+        </a>
+      </div>
+
+      <div>
+        <lucide-icon name="mail" [size]="28"></lucide-icon>
+        <strong>E-mail</strong>
+        <a class="contact-link" href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+
+      <div>
+        <lucide-icon name="map-pin" [size]="28"></lucide-icon>
+        <strong>Atuação</strong>
+        <span>Brasil • América do Sul</span>
+      </div>
+
+      <a class="btn btn--primary btn--primary-talk" href="mailto:{{ email }}?subject=Parceria%20-%20Eloucentrismo">
+        Vamos conversar
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  © 2026 {{ instagram }} • Design e desenvolvimento por Maria Eloisa Véras
+</footer>
