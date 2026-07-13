@@ -38,8 +38,8 @@ describe('AppComponent', () => {
       'Conteúdo que inspira'
     ]);
     expect(component.stats.map((stat) => stat.value)).toEqual([
-      '5,4K+',
-      '1,04%',
+      '5,5K',
+      '5,4%',
       '239',
       '25 • 3'
     ]);

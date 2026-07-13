@@ -37,12 +37,12 @@ export class AppComponent {
 
   readonly stats: Stat[] = [
     {
-      value: '5,4K+',
+      value: '5,5K',
       label: 'Seguidores',
       icon: Users
     },
     {
-      value: '1,04%',
+      value: '5,4%',
       label: 'Taxa de engajamento *',
       icon: HeartHandshake
     },
